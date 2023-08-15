@@ -111,7 +111,7 @@ class density_data:
             if dim==1:
                 z+=self.e[:,pos,:]/(2*tol+1)
             if dim==2:
-                z+=self.e[:,:,pos]/(2*tol+1)
+                z+=self.e[:,:,int(pos)]/(2*tol+1)
                 
         return z,pos_dim
     
